@@ -315,16 +315,16 @@ if __name__ == "__main__":
     t1 = time.ctime()
     tf1 = time.time()
     if is_alternate == True:
-        dir_name = '/home/adherentx/Dropbox/Research/CoF_Sim/'+str(tf1)+'-'+'alternate'+'-M=L='+str(M)+'-iter_H='+str(iter_H)
+        dir_name = '/home/chenghai/Research/CoF_Sim/'+str(tf1)+'-'+'alternate'+'-M=L='+str(M)+'-iter_H='+str(iter_H)
     else:
-        dir_name = '/home/adherentx/Dropbox/Research/CoF_Sim/'+str(tf1)+'-'+P_Search_Alg+'-M=L='+str(M)+'-iter_H='+str(iter_H)
+        dir_name = '/home/chenghai/Research/CoF_Sim/'+str(tf1)+'-'+P_Search_Alg+'-M=L='+str(M)+'-iter_H='+str(iter_H)
     if not os.path.exists(dir_name):
         os.makedirs(dir_name)
     original_dir = os.getcwd()
     os.chdir(dir_name) # change to the directory where simulation results should be placed
     
     '''First Hop'''
-    if False:
+    if True:
         sum_rate = [0]*len(Pl_con)
         sum_rate_var = [0]*len(Pl_con)
         sum_rate_beta = [0]*len(Pl_con)
@@ -381,7 +381,7 @@ if __name__ == "__main__":
         print 'sum_rate_var_beta: '; print sum_rate_var_beta
     
     '''Dual Hops'''
-    if True:
+    if False:
         sum_rate_fixed_pow_sym_mod = [0]*len(Pl_con)
         sum_rate_fixed_pow_asym_quan = [0]*len(Pl_con)
         sum_rate_sym_mod = [0]*len(Pl_con)
