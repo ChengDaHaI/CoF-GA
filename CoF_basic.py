@@ -37,6 +37,7 @@ if is_set_beta == True:
 iter_H = 8
 batch_H = 1
 
+#This is the key function in terms of rate!!!
 # P is a LxL matrix P_mat
 def rate_computation_MMSE_alpha(L, M, P_t, H, A, beta):
     for i_P in range(0, len(P_t)):

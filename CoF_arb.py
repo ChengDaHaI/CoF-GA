@@ -191,6 +191,9 @@ def CoF_compute_eq_pow_con_first_hop(P_con, M, L):
 #     print P_con, sum_rate, sum_rate_var
     return {'sum_rate': sum_rate, 'sum_rate_var': sum_rate_var, 'sum_rate_var_beta': sum_rate_var_beta, 'sum_rate_beta': sum_rate_beta}
 
+'''
+The Following Are Dual Hop Functions
+'''
 @parallel(ncpus=Cores)
 def CoF_compute_eq_pow_con_dual_hops(P_con, M, L):
     sum_rate_fixed_pow_sym_mod = 0
